@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.10.0</Version>
+    <SymbolConfigObject version="3.5.10.40" runtimeid="3.5.10.60" libversion="3.5.10.0" settings="LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="Aufzug21" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_REAL" size="4" swapsize="4" typeclass="Real" iecname="REAL" />
+    <TypeArray name="T_ARRAY__1__3__OF_BOOL" size="3" nativesize="3" typeclass="Array" iecname="ARRAY [1..3] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="1" maxrange="3" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__4__1__3__OF_BOOL" size="12" nativesize="12" typeclass="Array" iecname="ARRAY [1..4, 1..3] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="1" maxrange="4" />
+      <ArrayDim minrange="1" maxrange="3" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__4__1__5__OF_BOOL" size="20" nativesize="20" typeclass="Array" iecname="ARRAY [1..4, 1..5] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="1" maxrange="4" />
+      <ArrayDim minrange="1" maxrange="5" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__1__4__OF_BOOL" size="4" nativesize="4" typeclass="Array" iecname="ARRAY [1..4] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="1" maxrange="4" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__2__4__OF_BOOL" size="3" nativesize="3" typeclass="Array" iecname="ARRAY [2..4] OF BOOL" basetype="T_BOOL">
+      <ArrayDim minrange="2" maxrange="4" />
+    </TypeArray>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="GVL_HMI">
+        <Node name="AutomaticMode" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_AutomaticMode" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_deleteRequests" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_DoorClose" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_DoorCloseManual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_DoorOpen" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_DoorOpenManual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_EmergencyStop" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_ManualMode" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorDownCrawlManual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorDownV1Manual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorDownV2Manual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorUpCrawlManual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorUpV1Manual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_MotorUpV2Manual" type="T_BOOL" access="ReadWrite" />
+        <Node name="Button_Reset" type="T_BOOL" access="ReadWrite" />
+        <Node name="Buttons_Down" type="T_ARRAY__2__4__OF_BOOL" access="ReadWrite" />
+        <Node name="Buttons_level" type="T_ARRAY__1__4__OF_BOOL" access="ReadWrite" />
+        <Node name="Buttons_Up" type="T_ARRAY__1__3__OF_BOOL" access="ReadWrite" />
+        <Node name="CurrentLevel" type="T_INT" access="ReadWrite" />
+        <Node name="DoorCloses" type="T_BOOL" access="ReadWrite" />
+        <Node name="DoorIsClosed" type="T_BOOL" access="ReadWrite" />
+        <Node name="DoorIsOpen" type="T_BOOL" access="ReadWrite" />
+        <Node name="DoorOpens" type="T_BOOL" access="ReadWrite" />
+        <Node name="ErrorState" type="T_BOOL" access="ReadWrite" />
+        <Node name="ManualMode" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorDown" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorDownCrawl" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorDownV1" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorDownV2" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorOn" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorReady" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorUp" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorUpCrawl" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorUpV1" type="T_BOOL" access="ReadWrite" />
+        <Node name="MotorUpV2" type="T_BOOL" access="ReadWrite" />
+        <Node name="Position" type="T_INT" access="ReadWrite" />
+        <Node name="Requests" type="T_ARRAY__1__4__1__3__OF_BOOL" access="ReadWrite" />
+        <Node name="Sensors" type="T_ARRAY__1__4__1__5__OF_BOOL" access="ReadWrite" />
+        <Node name="SimulationDoorIsOpen" type="T_ARRAY__1__4__OF_BOOL" access="ReadWrite" />
+        <Node name="Speed" type="T_REAL" access="ReadWrite" />
+        <Node name="SupervisorActive" type="T_BOOL" access="ReadWrite" />
+        <Node name="TargetLevel" type="T_INT" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
